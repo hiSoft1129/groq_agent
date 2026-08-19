@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from ddgs import DDGS
 
-
 def search_web(query: str, max_results: int = 5) -> str:
     """Search the web for current information."""
 

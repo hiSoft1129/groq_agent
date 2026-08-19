@@ -39,8 +39,8 @@ TOOL_FUNCTIONS = {
 MAX_SEARCH_RESULTS = 5
 MAX_TOOL_RESULT_CHARS = 2500
 MAX_RESEARCH_CHARS = 5000
-MAX_TOOL_TURNS = 2
-MAX_OUTPUT_TOKENS = 800
+MAX_TOOL_TURNS = 5
+MAX_OUTPUT_TOKENS = 2000
 
 SYSTEM_PROMPT = """You are a concise research assistant.
 Use the available tools only when needed.
@@ -360,8 +360,8 @@ def run_agent(user_message):
 if __name__ == "__main__":
 
     question = (
-        "What are the top 3 most popular programming "
-        "languages in 2025 and why?"
+        "What is the most popular programming language in this year, and why is it so popular?"
+        "How does it compare to other languages in terms of performance and community support?"
     )
 
     answer = run_agent(question)
